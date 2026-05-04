@@ -1,0 +1,10 @@
+build/
+dist/
+*.exe
+*.dll
+*.log
+.DS_Store
+Thumbs.db
+*.xojo_uistate
+*.xojo_project~
+*.xojo_binary_project~
