@@ -34,12 +34,12 @@ web-materias/
 ├── careers.csv
 ├── subjects.csv
 ├── README.md
-└── Materias y Manuales.xojo_binary_project
+└── materias_y_manuales.xojo_binary_project
 ```
 
 ## Archivos principales
 
-### `Materias y Manuales.xojo_binary_project`
+### `materias_y_manuales.xojo_binary_project`
 
 Proyecto principal desarrollado en Xojo.
 
@@ -250,7 +250,7 @@ Una vez validada la demo inicial, el proyecto puede evolucionar hacia:
 El proyecto se encuentra guardado como archivo binario de Xojo:
 
 ```text
-Materias y Manuales.xojo_binary_project
+materias_y_manuales.xojo_binary_project
 ```
 
 Este formato es válido para trabajar desde el IDE, aunque no es el más cómodo para revisar cambios en Git.
