@@ -237,13 +237,27 @@ No incluye todavía:
 Una vez validada la demo inicial, el proyecto puede evolucionar hacia:
 
 - uso de SQLite local;
-- integración con Supabase;
+- - integración con una base de datos institucional, a definir con Infraestructura/DBA;
 - panel de administración;
 - carga y edición de materias;
 - asociación de múltiples recursos por materia;
 - búsqueda por texto;
 - filtros avanzados;
 - despliegue web.
+
+## Decisión pendiente de infraestructura
+
+La persistencia definitiva de datos y el almacenamiento de manuales quedan sujetos a validación con el área de Infraestructura/DBA.
+
+Aspectos a definir:
+
+- motor de base de datos recomendado;
+- modalidad de conexión desde Xojo;
+- ubicación definitiva de los manuales;
+- permisos de acceso;
+- backups;
+- mantenimiento;
+- despliegue interno o externo.
 
 ## Nota sobre Xojo
 
