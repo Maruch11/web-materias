@@ -8,3 +8,5 @@ Thumbs.db
 *.xojo_uistate
 *.xojo_project~
 *.xojo_binary_project~
+__pycache__/
+*.pyc

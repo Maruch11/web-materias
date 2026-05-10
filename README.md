@@ -31,8 +31,9 @@ Actualmente cuenta con:
 ```text
 web-materias/
 ├── .git/
-├── careers.csv
-├── subjects.csv
+├── data/
+│   ├── careers.csv
+│   └── subjects.csv
 ├── README.md
 └── materias_y_manuales.xojo_binary_project
 ```
@@ -45,7 +46,7 @@ Proyecto principal desarrollado en Xojo.
 
 Contiene la interfaz web inicial de la aplicación.
 
-### `careers.csv`
+### `data/careers.csv`
 
 Archivo normalizado con las carreras disponibles.
 
@@ -57,7 +58,7 @@ career_name
 career_slug
 ```
 
-### `subjects.csv`
+### `data/subjects.csv`
 
 Archivo normalizado con las materias asociadas a cada carrera.
 
@@ -130,8 +131,8 @@ inicia                → subjects.starts
 
 ## Reglas de normalización
 
-- Cada carrera se guarda una sola vez en `careers.csv`.
-- Cada materia se guarda en `subjects.csv`.
+- Cada carrera se guarda una sola vez en `data/careers.csv`.
+- Cada materia se guarda en `data/subjects.csv`.
 - Cada materia referencia una carrera mediante `career_id`.
 - Los IDs de los CSV funcionan como seed inicial.
 - Los enlaces pueden estar vacíos si todavía no existe manual o GPT asociado.
@@ -154,7 +155,7 @@ Usuario selecciona carrera
         ↓
 Usuario selecciona cuatrimestre
         ↓
-La app filtra subjects.csv
+La app filtra `data/subjects.csv`
         ↓
 La lista muestra materias reales
         ↓
@@ -187,8 +188,8 @@ Manual o GPT aún no cargado para esta materia.
 
 ## Funcionalidades pendientes
 
-- Cargar carreras desde `careers.csv`.
-- Cargar materias desde `subjects.csv`.
+- Cargar carreras desde `data/careers.csv`.
+- Cargar materias desde `data/subjects.csv`.
 - Reemplazar materias hardcodeadas.
 - Filtrar materias por carrera.
 - Filtrar materias por cuatrimestre.
@@ -237,13 +238,25 @@ No incluye todavía:
 Una vez validada la demo inicial, el proyecto puede evolucionar hacia:
 
 - uso de SQLite local;
-- - integración con una base de datos institucional, a definir con Infraestructura/DBA;
+- integración con una base de datos institucional, a definir con Infraestructura/DBA;
 - panel de administración;
 - carga y edición de materias;
 - asociación de múltiples recursos por materia;
 - búsqueda por texto;
 - filtros avanzados;
 - despliegue web.
+
+## Cómo contribuir
+
+Este repositorio está organizado para facilitar aportes de datos y documentación.
+
+- Los datos deben actualizarse en `data/careers.csv` y `data/subjects.csv`.
+- El esquema de datos está documentado en `data/README.md`.
+- Usa `scripts/validate_csv.py` para validar columnas y estructura básica.
+- Las plantillas de issue y PR están en `.github/`.
+- El proyecto Xojo es el binario principal; evita cambiarlo sin describirlo bien en el PR.
+
+Para más detalles, consulta `CONTRIBUTING.md`.
 
 ## Decisión pendiente de infraestructura
 
