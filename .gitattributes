@@ -1,1 +1,2 @@
 scripts/validate_csv.py linguist-detectable=false
+*.xojo_binary_project linguist-language=Xojo
