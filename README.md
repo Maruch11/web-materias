@@ -70,6 +70,8 @@ career_id
 subject_name
 term
 official_url
+link_raw
+manual_raw
 notes
 starts
 ```
@@ -96,6 +98,8 @@ career_id
 name
 term
 official_url
+link_raw
+manual_raw
 notes
 starts
 ```
@@ -124,7 +128,9 @@ El modelo normalizado separa carreras y materias.
 Policia/Bomberos      → careers
 Materia               → subjects.name
 Anual/Cuatrimestre    → subjects.term
-Link/Manual           → subjects.official_url
+Link                  → subjects.link_raw
+Manual                → subjects.manual_raw
+Link/Manual limpio    → subjects.official_url
 Obs                   → subjects.notes
 inicia                → subjects.starts
 ```
@@ -135,6 +141,8 @@ inicia                → subjects.starts
 - Cada materia se guarda en `data/subjects.csv`.
 - Cada materia referencia una carrera mediante `career_id`.
 - Los IDs de los CSV funcionan como seed inicial.
+- `official_url` es el enlace limpio/final que debe usar la app.
+- `link_raw` y `manual_raw` son datos originales/provisorios para trazabilidad y normalización; no se usan todavía en la app.
 - Los enlaces pueden estar vacíos si todavía no existe manual o GPT asociado.
 - Los valores de `term` deben mantenerse consistentes.
 

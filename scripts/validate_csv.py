@@ -6,7 +6,7 @@ EXPECTED_COLUMNS = {
     'data/careers.csv': ['career_id', 'career_name', 'career_slug'],
     'data/subjects.csv': [
         'subject_id', 'career_id', 'subject_name', 'term',
-        'official_url', 'notes', 'starts'
+        'official_url', 'link_raw', 'manual_raw', 'notes', 'starts'
     ],
 }
 
