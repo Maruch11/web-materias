@@ -24,7 +24,7 @@ Gracias por querer contribuir a `web-materias`. Este documento describe el flujo
 
 ## Good practices
 
-- Escribir un mensaje de commit claro.
+- Escribir un mensaje de commit con conventional commit en inglés.
 - Incluir en el PR una descripción breve de los cambios.
 - Si el cambio es en datos, explicar qué se agregó o se normalizó.
 
@@ -34,3 +34,4 @@ Gracias por querer contribuir a `web-materias`. Este documento describe el flujo
 - `scripts/validate_csv.py`: valida columnas y consistencia básica.
 - `.github/ISSUE_TEMPLATE.md`: plantilla para reportar problemas.
 - `.github/pull_request_template.md`: plantilla para describir cambios.
+- `xojo-current-logic.md` : documentacion manual de eventos, metodos, pproiedades, etc.
